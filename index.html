@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study And Chill</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="backdrop"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <main class="screen">
+    <section class="top">
+      <div class="title-wrap" id="titleWrap">
+        <h1>NASA's Picture of the Day</h1>
+        <div id="apodTitle">Loading image...</div>
+        <details class="apod-details" id="apodDetails">
+          <summary>About this image</summary>
+          <p id="apodDescription" class="apod-description">Loading description...</p>
+        </details>
+      </div>
+      <aside class="side-panel">
+        <div class="clock-wrap" id="clockWrap">
+          <p id="date">--</p>
+          <p id="time">--:--:--</p>
+        </div>
+        <section class="pomodoro" id="pomodoro">
+          <div class="pomodoro__head">
+            <span class="pomodoro__label">Pomodoro</span>
+            <div class="pomodoro__modes" role="group" aria-label="Pomodoro mode">
+              <button type="button" class="pomodoro__mode is-active" id="modeFocus" data-mode="focus">Focus</button>
+              <button type="button" class="pomodoro__mode" id="modeShort" data-mode="short">Short</button>
+              <button type="button" class="pomodoro__mode" id="modeLong" data-mode="long">Long</button>
+            </div>
+          </div>
+          <p class="pomodoro__time" id="pomodoroTime">25:00</p>
+          <div class="pomodoro__controls">
+            <button type="button" class="pomodoro__btn pomodoro__btn--main" id="pomodoroStartPause">Start</button>
+            <button type="button" class="pomodoro__btn" id="pomodoroReset">Reset</button>
+            <button type="button" class="pomodoro__btn" id="pomodoroSkip">Skip</button>
+          </div>
+        </section>
+      </aside>
+    </section>
+
+    <section class="bottom-dock">
+      <div class="lofi-player" id="lofiPlayer">
+        <div class="lofi-player__header">
+          <span class="lofi-player__badge">Music Player</span>
+          <div class="lofi-player__viz" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <p class="lofi-player__track" id="playerTrackTitle">Loading playlist…</p>
+        <div class="lofi-player__progress-wrap">
+          <span class="lofi-player__time" id="playerCurrent">0:00</span>
+          <input type="range" class="lofi-player__scrub" id="playerScrub" min="0" max="1000" value="0" aria-label="Seek">
+          <span class="lofi-player__time" id="playerDuration">0:00</span>
+        </div>
+        <div class="lofi-player__controls">
+          <button type="button" class="lofi-player__btn" id="playerPrev" aria-label="Previous track">⏮</button>
+          <button type="button" class="lofi-player__btn lofi-player__btn--main" id="playerPlay" aria-label="Play or pause">▶</button>
+          <button type="button" class="lofi-player__btn" id="playerNext" aria-label="Next track">⏭</button>
+        </div>
+        <div class="lofi-player__volume-row">
+          <label class="lofi-player__vol-label" for="playerVolume">Vol</label>
+          <input type="range" class="lofi-player__volume" id="playerVolume" min="0" max="1" step="0.02" value="0.7" aria-label="Volume">
+        </div>
+      </div>
+      <audio id="audioEl" preload="metadata"></audio>
+      <section class="metrics" id="metricsPanel">
+        <article class="metric">
+          <p class="metric-label">Ping</p>
+          <p id="ping" class="metric-value">Checking...</p>
+        </article>
+        <article class="metric">
+          <p class="metric-label">Battery</p>
+          <p id="battery" class="metric-value">Checking...</p>
+        </article>
+      </section>
+    </section>
+  </main>
+  <div class="layout-toolbar" aria-label="Layout editor">
+    <button type="button" class="layout-toolbar__btn" id="layoutEditToggle">Edit Layout</button>
+    <button type="button" class="layout-toolbar__btn" id="layoutReset">Reset Layout</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
