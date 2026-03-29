@@ -1,6 +1,16 @@
 {
   "tracks": [
     { "file": "GoodNight.mp3", "title": "Good Night - Lofi Cozy" },
-    { "file": "ChillWalk.mp3", "title": "Chill Walk - Aventure" }
+    { "file": "ChillWalk.mp3", "title": "Chill Walk - Aventure" },
+    { "file": "NolstalgicLofi.mp3", "title": "Dreamy Nostalgic Lofi - Aventure" },
+    { "file": "LofiChillBeat.mp3", "title": "Lofi Chill Relaxing Beat - Aventure" },
+    { "file": "LofiMeadow.mp3", "title": "Lofi Relaxing Meadow Beat - Aventure" },
+    { "file": "LofiTravel.mp3", "title": "Lofi Travel Beat - Aventure" },
+    { "file": "LofiChill.mp3", "title": "Lofi - Lofi Girl" },
+    { "file": "SentimentalJazz.mp3", "title": "Sentimental Jazzy Love - Lofi Girl" },
+    { "file": "LofiAmbient.mp3", "title": "Ambient Lofi - Lofi Girl" },
+    { "file": "LofiDreams.mp3", "title": "Lofi Dreams - Lofi Girl" },
+    { "file": "CoffeeLofi.mp3", "title": "Coffee Lofi - Lofi Girl" }
+    
   ]
 }
